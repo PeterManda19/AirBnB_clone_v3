@@ -32,4 +32,3 @@ class User(BaseModel, Base):
             m.update(str.encode(password))
             kwargs['password'] = m.hexdigest()
         super().__init__(*args, **kwargs)
-        
